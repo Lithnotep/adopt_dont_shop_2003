@@ -189,6 +189,7 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
@@ -207,6 +208,55 @@
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/controllers/application_controller.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/spec/features/pets/index_spec.rb": [
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/spec/features/shelters/delete_spec.rb": [
@@ -356,6 +406,9 @@
         null,
         null
       ],
+      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/spec/models/pets_spec.rb": [
+
+      ],
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/spec/models/shelter_spec.rb": [
         1,
         null,
@@ -371,7 +424,7 @@
       ],
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/models/shelter.rb": [
         1,
-        null,
+        1,
         1,
         null,
         null
@@ -379,6 +432,27 @@
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/models/application_record.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/models/pet.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/controllers/pets_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_2003/app/controllers/shelters_controller.rb": [
@@ -432,6 +506,6 @@
         null
       ]
     },
-    "timestamp": 1588882396
+    "timestamp": 1588894503
   }
 }

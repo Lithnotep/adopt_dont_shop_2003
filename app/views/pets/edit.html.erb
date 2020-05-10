@@ -1,4 +1,12 @@
+<body>
+
+
 <h1>Update Pet</h1>
+
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
 
 <%= form_tag "/pets/#{@pet.id}", method: :patch do %>
 <%= label_tag "Image" %>
@@ -18,3 +26,5 @@
 
 <%= submit_tag "Update Pet" %>
 <% end %>
+
+</body>

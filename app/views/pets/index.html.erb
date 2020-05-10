@@ -1,4 +1,10 @@
-<h1>All Pets</h1>
+<body>
+
+<h1>Pets</h1>
+
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+</nav>
 
 <% @pets.each do |pet| %>
   <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
@@ -12,3 +18,5 @@
   <%= button_to "Update Pet", "/pets/#{pet.id}/edit", method: :get %><br/>
   <%= button_to "Delete Pet", "/pets/#{pet.id}", method: :delete %>
 <% end %>
+
+</body>

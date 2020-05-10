@@ -1,9 +1,16 @@
+<body>
+
 <h1>All Shelters</h1>
+
+<nav>
+  <%= link_to "Pets", "/pets" %>
+</nav>
 
 <a href="/shelters/new">New Shelter</a>
 <% @shelters.each do |shelter| %>
   <h2><%= link_to "#{shelter.name}", "/shelters/#{shelter.id}" %> </h2>
-  <%= button_to "Shelter Page", "/shelters/#{shelter.id}", method: :get%><br/>
   <%= button_to "Delete Shelter", "/shelters/#{shelter.id}", method: :delete %>
 
 <% end %>
+
+</body>

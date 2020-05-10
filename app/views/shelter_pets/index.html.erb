@@ -1,7 +1,11 @@
-
 <body>
 
 <h1><%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h1>
+
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
 
 <% @shelter.pets.each do |pet| %>
   <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>

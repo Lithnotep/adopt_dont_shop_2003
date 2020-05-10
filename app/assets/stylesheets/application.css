@@ -45,15 +45,6 @@
    font-size: 18px;
  }
 
- .inner {
-   padding-left: 30px;
-   padding-top: 30px;
-   padding-bottom: 30px;
-   background-color: white;
-   color: black;
-   text-align: left;
-   font-size: 30px;
- }
 
  nav {
    background-color: #565756;
@@ -69,11 +60,11 @@
  }
 
  a:visited {
-   color: white;
+   color: blue;
  }
 
  a:hover {
-   color: red;
+   color: yellow;
  }
 
  section {
@@ -88,22 +79,4 @@
    font-size: 16px;
    padding: 10px;
    padding-right: 300px;
- }
-
- .sidebar {
-   float: right;
-   height: 10%;
-   width: 10%;
-   background-color: white
- }
-
- .bottom {
-   font-size: 16px;
-   padding: 10px;
-   color: white;
- }
-
- footer {
-   padding: 10px;
-   background-color: brown;
  }

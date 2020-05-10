@@ -1,11 +1,16 @@
-
 <body>
 
 <h1><%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h1>
 
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
+
+<section>
 <% @shelter.pets.each do |pet| %>
   <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
-  <p><%= "#{pet.image}" %></p>
+  <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
   <ul>
     <li><%= "Age: #{pet.approximate_age}" %></li>
     <li><%= "Sex: #{pet.sex}" %></li>
@@ -19,5 +24,5 @@
   <% end %>
 
 <%= button_to "Create Pet", "/shelters/#{@shelter.id}/pets/new", method: :get%>
-
+</section>
 </body>

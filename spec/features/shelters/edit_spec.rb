@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "user creates a new shelter" do
   describe "they link from the shelters index" do
     describe "they fill in a location data and" do
-      it "creates a new shelter" do
+      it "update  a current shelter" do
         shelter_1 = Shelter.create(name: "Pets Place",
                              address: "341 Bonanza",
                              city:  "Denver",
@@ -11,8 +11,6 @@ describe "user creates a new shelter" do
                              zip: 80127)
         visit "/shelters/#{shelter_1.id}"
         click_on "Update Shelter"
-
-        # expect('/shelters').to eq('/shelters/new')
 
         fill_in "shelter[name]", with: "Pupper Town"
         fill_in "shelter[address]",  with: "Willowleaf"

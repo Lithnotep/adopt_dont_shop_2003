@@ -1,5 +1,13 @@
+<body>
+
 <h1>Create New Pet</h1>
 
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
+
+<section>
 <%= form_tag("/shelters/#{@shelter_id}/pets", method: :post) do %>
   <%= label_tag "Image" %>
   <%= text_field_tag :image %><br/>
@@ -19,3 +27,5 @@
 
   <%= submit_tag "Create Pet" %>
 <% end %>
+</section>
+</body>

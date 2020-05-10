@@ -10,7 +10,7 @@
 <section>
 <% @shelter.pets.each do |pet| %>
   <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
-  <p><%= "#{pet.image}" %></p>
+  <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
   <ul>
     <li><%= "Age: #{pet.approximate_age}" %></li>
     <li><%= "Sex: #{pet.sex}" %></li>

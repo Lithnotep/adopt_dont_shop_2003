@@ -7,6 +7,7 @@
   <%= link_to "Pets", "/pets" %>
 </nav>
 
+<section>
 <ul>
 <li>Address: <%= @shelter.address %></li>
 <li>City: <%= @shelter.city %></li>
@@ -17,6 +18,6 @@
 <%= button_to "Shelter Pets", "/shelters/#{@shelter.id}/pets", method: :get %>
 <%= button_to "Update Shelter", "/shelters/#{@shelter.id}/edit", method: :get %>
 <%= button_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
-
+</section>
 
 </body>

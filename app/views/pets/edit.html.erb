@@ -8,6 +8,8 @@
   <%= link_to "Pets", "/pets" %>
 </nav>
 
+<section>
+
 <%= form_tag "/pets/#{@pet.id}", method: :patch do %>
 <%= label_tag "Image" %>
 <%= text_field_tag :image, @pet.image %><br/>
@@ -26,5 +28,6 @@
 
 <%= submit_tag "Update Pet" %>
 <% end %>
+</section>
 
 </body>

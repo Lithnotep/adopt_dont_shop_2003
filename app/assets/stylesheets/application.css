@@ -19,9 +19,13 @@
    padding-left: 30px;
    padding-top: 30px;
    padding-bottom: 30px;
+   padding-right: 25px;
  }
 
  h1 {
+   border-style: solid;
+   border: 10px;
+   border-color: white;
    padding-left: 30px;
    padding-top: 30px;
    padding-bottom: 30px;
@@ -29,6 +33,16 @@
    color: white;
    text-align: left;
    font-size: 30px;
+ }
+
+ h2 {
+   padding-left: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   background-color: #ed0202;
+   color: red;
+   text-align: left;
+   font-size: 18px;
  }
 
  .inner {
@@ -51,23 +65,22 @@
    padding-bottom: 10px;
  }
  a:link {
-   color: white;
+   color: red;
  }
 
- /* visited link */
  a:visited {
    color: white;
  }
 
- /* mouse over link */
  a:hover {
    color: red;
  }
 
  section {
-   height: 100%;
-   width: 100%;
-   padding: 30px;
+   padding-left: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 25px;
    background-color: white
  }
 

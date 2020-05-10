@@ -7,7 +7,7 @@
   <%= link_to "Shelters", "/shelters" %>
   <%= link_to "Pets", "/pets" %>
 </nav>
-
+<section>
 <p><%= "#{@pet.image}" %></p>
 <ul>
   <li><%= "Age: #{@pet.approximate_age}" %></li>
@@ -22,5 +22,6 @@
 </ul>
 <%= button_to "Update Pet", "/pets/#{@pet.id}/edit", method: :get %><br/>
 <%= button_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
+</section>
 
 </body>

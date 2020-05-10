@@ -7,6 +7,7 @@
   <%= link_to "Pets", "/pets" %>
 </nav>
 
+<section>
 <% @shelter.pets.each do |pet| %>
   <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
   <p><%= "#{pet.image}" %></p>
@@ -23,5 +24,5 @@
   <% end %>
 
 <%= button_to "Create Pet", "/shelters/#{@shelter.id}/pets/new", method: :get%>
-
+</section>
 </body>

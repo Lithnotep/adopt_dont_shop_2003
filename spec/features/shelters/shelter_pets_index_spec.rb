@@ -12,11 +12,13 @@ RSpec.describe "Show Index of all pets in a shelter" do
                              image: "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                              approximate_age:  3,
                              sex: "Male",
+                             description: "Very Cute Cat!",
                              shelter_id: shelter_1.id)
         pet_2 = Pet.create(name: "Lanny",
                              image: "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                              approximate_age:  4,
                              sex: "Female",
+                             description: "Super Very Cute Cat!",
                              shelter_id: shelter_1.id)
         visit  "/shelters/#{shelter_1.id}/pets"
 
@@ -28,6 +30,8 @@ RSpec.describe "Show Index of all pets in a shelter" do
         expect(page).to have_content(pet_2.approximate_age)
         expect(page).to have_content(pet_1.sex)
         expect(page).to have_content(pet_2.sex)
+        expect(page).to have_content(pet_1.description)
+        expect(page).to have_content(pet_2.description)
         expect(page).to have_content("Pets Place")
 
 

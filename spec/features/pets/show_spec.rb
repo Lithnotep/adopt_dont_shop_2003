@@ -11,6 +11,7 @@ RSpec.describe "pets show page", type: :feature do
                          image: "forlorn_1.jpg",
                          approximate_age:  3,
                          sex: "Male",
+                         description: "Very Cute Cat!",
                          shelter_id: shelter_1.id)
 
     visit "/pets/#{pet_1.id}"
@@ -19,6 +20,7 @@ RSpec.describe "pets show page", type: :feature do
     expect(page).to have_content(pet_1.image)
     expect(page).to have_content(pet_1.approximate_age)
     expect(page).to have_content(pet_1.sex)
+    expect(page).to have_content(pet_1.description)
 
   end
 end

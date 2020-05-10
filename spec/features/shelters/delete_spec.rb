@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Destroy an Artist" do
-  describe "When I visit an artists show page" do
+RSpec.describe "Destroy an Shelter" do
+  describe "When I visit an shelters show page" do
     it "I can Delete a shelter" do
     shelter_1 = Shelter.create(name: "Pets Place",
                          address: "341 Bonanza",

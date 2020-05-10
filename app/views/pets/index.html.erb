@@ -1,14 +1,14 @@
 <h1>All Pets</h1>
 
 <% @pets.each do |pet| %>
-  <h2><%= pet.name %> </h2>
+  <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
   <p><%= "#{pet.image}" %></p>
   <ul>
     <li><%= "Age: #{pet.approximate_age}" %></li>
     <li><%= "Sex: #{pet.sex}" %></li>
-    <li><%= "Shelter: #{pet.shelter.name}" %></li>
+    <li>Shelter: <a href="/shelters/<%=pet.shelter_id%>"><%= "#{pet.shelter.name}" %></a></li>
     <li><%= "Description: #{pet.description}" %></li>
-
   </ul>
-
+  <%= button_to "Update Pet", "/pets/#{pet.id}/edit", method: :get %><br/>
+  <%= button_to "Delete Pet", "/pets/#{pet.id}", method: :delete %>
 <% end %>

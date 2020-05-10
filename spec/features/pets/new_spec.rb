@@ -11,7 +11,7 @@ describe "user creates a new pet" do
                              state: "CO",
                              zip: 80127)
         visit  "/shelters/#{shelter_1.id}/pets"
-        click_link "Create Pet"
+        click_on "Create Pet"
         expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
 
 

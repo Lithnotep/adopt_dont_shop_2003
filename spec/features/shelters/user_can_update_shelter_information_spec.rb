@@ -10,7 +10,7 @@ describe "user creates a new shelter" do
                              state: "CO",
                              zip: 80127)
         visit "/shelters/#{shelter_1.id}"
-        click_link "Update Shelter"
+        click_on "Update Shelter"
 
         # expect('/shelters').to eq('/shelters/new')
 

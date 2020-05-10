@@ -18,7 +18,7 @@ pet_1 = Pet.create(name: "Mansy",
                      shelter_id: shelter_1.id)
 
                  visit "/pets/#{pet_1.id}"
-                 click_link "Update Pet"
+                 click_on "Update Pet"
 
                  fill_in :name, with: "Tamy"
                  fill_in :image,  with: "tamy.jpg"

@@ -10,5 +10,6 @@
   <% else %>
   <li><%= "Status: Pending Adoption" %></li>
   <% end %>
-  <li><%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %></li>
+  <li><%= button_to "Update Pet", "/pets/#{@pet.id}/edit", method: :get %></li>
+  <li><%= button_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %></li>
 </ul>

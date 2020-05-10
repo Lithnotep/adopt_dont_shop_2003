@@ -12,13 +12,14 @@ describe "user creates a new pet" do
                              zip: 80127)
         visit  "/shelters/#{shelter_1.id}/pets"
         click_link "Create Pet"
+        expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
 
 
-        fill_in "pet[name]", with: "Tory"
-        fill_in "pet[image]",  with: "tory.jpg"
-        fill_in "pet[approximate_age]",  with: 5
-        fill_in "pet[description]",  with: "Very Cute Cat!"
-        fill_in "pet[sex]",  with: "Female"
+        fill_in :name, with: "Tory"
+        fill_in :image,  with: "tory.jpg"
+        fill_in :approximate_age,  with: 5
+        fill_in :description,  with: "Very Cute Cat!"
+        fill_in :sex,  with: "Female"
         click_on "Create Pet"
 
        expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
@@ -27,6 +28,7 @@ describe "user creates a new pet" do
        expect(page).to have_content(5)
        expect(page).to have_content("Female")
        expect(page).to have_content("Very Cute Cat!")
+       expect(page).to have_content("Status: Adoptable")
 
       end
     end
